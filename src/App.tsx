@@ -23,7 +23,7 @@ function App() {
   });
   const getWeather = (e: any) => {
     e.preventDefault();
-    fetch(`http://api.weatherapi.com/v1/current.json?key=d6ae960afd90457090a31016230209&q=${city}&aqi=no`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=d6ae960afd90457090a31016230209&q=${city}&aqi=no`)
          .then(res => res.json())
          .then(data => {
             setResults({
