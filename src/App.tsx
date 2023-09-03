@@ -36,11 +36,13 @@ function App() {
          })
   }
   return (
-    <div className="wrapper">
-      <div className="container">
-        <Title />
-        <Form getWeather={getWeather} setCity={setCity} />
-        <Results results={results} />
+    <div className="App">
+      <div className="wrapper">
+        <div className="container">
+          <Title />
+          <Form getWeather={getWeather} setCity={setCity} />
+          <Results results={results} />
+        </div>
       </div>
     </div>
   );
